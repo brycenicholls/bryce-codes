@@ -41,7 +41,7 @@ layout = "basic" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixe
 [footer]
 showMenu = true
 showCopyright = true
-showThemeAttribution = true
+showThemeAttribution = false
 showAppearanceSwitcher = true
 showScrollToTop = true
 

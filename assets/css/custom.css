@@ -1,0 +1,48 @@
+/* Custom CSS for left-justified text alignment */
+
+/* Apply text justification to all prose content */
+.prose {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Ensure headings remain left-aligned */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  text-align: left;
+}
+
+/* Keep code blocks left-aligned */
+.prose pre,
+.prose code {
+  text-align: left;
+}
+
+/* Keep lists left-aligned */
+.prose ul,
+.prose ol {
+  text-align: left;
+}
+
+/* Keep tables left-aligned */
+.prose table {
+  text-align: left;
+}
+
+/* Override homepage center alignment for content */
+.prose p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Keep navigation and UI elements as-is */
+nav,
+.menu,
+header,
+footer {
+  text-align: inherit;
+}
