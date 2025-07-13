@@ -1,25 +1,61 @@
 ---
-title: "Bryce.codes"
-description: "Cloud Infrastructure Engineer's journey into Python development and automation"
+title: "Bryce Codes"
+layout: hextra-home
 ---
 
-# Hi, I'm Bryce! 👋
+{{< hextra/hero-badge >}}
+  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
+  <span>Infrastructure & DevOps Documentation</span>
+  {{< icon name="arrow-circle-right" attributes="height=14" >}}
+{{< /hextra/hero-badge >}}
 
-I'm a **Cloud Native Infrastructure Engineer** who discovered the power of code and automation to solve real-world infrastructure challenges.
+<div class="hx-mt-6 hx-mb-6">
+{{< hextra/hero-headline >}}
+  Build Modern Infrastructure&nbsp;<br class="sm:hx-block hx-hidden" />with Confidence
+{{< /hextra/hero-headline >}}
+</div>
 
-## My Journey
+<div class="hx-mb-12">
+{{< hextra/hero-subtitle >}}
+  Comprehensive guides covering DevOps, cloud technologies, and infrastructure automation. Learn best practices for modern infrastructure management.
+{{< /hextra/hero-subtitle >}}
+</div>
 
-- **Python Development** - From simple bash scripts to sophisticated automation tools
-- **Ansible Automation** - Infrastructure as Code for managing OpenStack regions
-- **Cloud Infrastructure** - Hands-on with OpenStack, Ceph, and modern cloud platforms
-- **Problem Solving** - Real solutions to complex infrastructure challenges
+<div class="hx-mb-6">
+{{< hextra/hero-button text="Get Started" link="docs" >}}
+</div>
 
-My career evolved from traditional IT support to cloud engineering, driven by the belief that **code can eliminate toil** and make infrastructure both more reliable and enjoyable to manage.
-
-## What I Do
-
-Currently working as an OpenStack Infrastructure Engineer, managing multiple regions with Kolla-Ansible and maintaining Ceph storage clusters. I write Python applications for infrastructure automation and use Ansible extensively for configuration management.
-
----
-
-*From manual processes to Infrastructure as Code - that's my story.*
+<div class="hx-mt-6">
+{{< hextra/feature-grid >}}
+  {{< hextra/feature-card
+    icon="code"
+    title="Infrastructure as Code"
+    subtitle="Learn Terraform, Ansible, and other IaC tools for automating infrastructure deployment and management."
+  >}}
+  {{< hextra/feature-card
+    icon="cube"
+    title="Container Orchestration"
+    subtitle="Docker, Kubernetes, and container best practices for scalable application deployment."
+  >}}
+  {{< hextra/feature-card
+    icon="cloud"
+    title="Cloud Platforms"
+    subtitle="AWS, Azure, GCP guides covering core services, networking, and security best practices."
+  >}}
+  {{< hextra/feature-card
+    icon="chart-bar"
+    title="Monitoring & Observability"
+    subtitle="Prometheus, Grafana, ELK stack, and other tools for comprehensive system monitoring."
+  >}}
+  {{< hextra/feature-card
+    icon="cog"
+    title="CI/CD Pipelines"
+    subtitle="GitLab CI, GitHub Actions, Jenkins, and automated testing strategies for reliable deployments."
+  >}}
+  {{< hextra/feature-card
+    icon="shield-check"
+    title="Security & Compliance"
+    subtitle="Security scanning, compliance automation, and best practices for secure infrastructure."
+  >}}
+{{< /hextra/feature-grid >}}
+</div>
