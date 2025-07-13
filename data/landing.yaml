@@ -27,7 +27,7 @@ hero:
   subtitleColor: # default: "#777" (leave blank to inherit template color)
   textAlign: left # left, center, or right
   primaryButton:
-    text: "Get Started"
+    text: "Documentation"
     color: primary
     href: "/docs/"
     soft: false
