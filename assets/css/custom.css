@@ -1,0 +1,217 @@
+ /* Nord Color Palette - Dark Theme */
+:root {
+  /* Nord Polar Night */
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  
+  /* Nord Snow Storm */
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  
+  /* Nord Frost */
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  
+  /* Nord Aurora */
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+  
+  /* Primary color using Nord frost blue */
+  --primary-hue: 213deg;
+  --primary-saturation: 32%;
+  --primary-lightness: 52%;
+}
+
+/* Dark mode styles */
+html[class~="dark"] {
+  --color-neutral-50: var(--nord6);
+  --color-neutral-100: var(--nord5);
+  --color-neutral-200: var(--nord4);
+  --color-neutral-300: var(--nord3);
+  --color-neutral-400: var(--nord3);
+  --color-neutral-500: var(--nord2);
+  --color-neutral-600: var(--nord2);
+  --color-neutral-700: var(--nord1);
+  --color-neutral-800: var(--nord1);
+  --color-neutral-900: var(--nord0);
+  --color-neutral-950: var(--nord0);
+}
+
+/* Background colors */
+html[class~="dark"] body {
+  background-color: var(--nord0);
+  color: var(--nord4);
+}
+
+/* Content area */
+html[class~="dark"] .content {
+  background-color: var(--nord0);
+  color: var(--nord4);
+}
+
+/* Navbar */
+html[class~="dark"] .nav-container {
+  background-color: var(--nord1);
+  border-bottom-color: var(--nord2);
+}
+
+/* Sidebar */
+html[class~="dark"] .sidebar-container {
+  background-color: var(--nord1);
+  border-right-color: var(--nord2);
+}
+
+html[class~="dark"] .sidebar-active-item {
+  background-color: var(--nord2);
+  color: var(--nord8);
+}
+
+/* Cards */
+html[class~="dark"] .hextra-card {
+  background-color: var(--nord1);
+  border-color: var(--nord2);
+  color: var(--nord4);
+}
+
+html[class~="dark"] .hextra-card:hover {
+  background-color: var(--nord2);
+  border-color: var(--nord8);
+}
+
+/* Code blocks */
+html[class~="dark"] .hextra-code-block {
+  background-color: var(--nord1);
+  border-color: var(--nord2);
+}
+
+html[class~="dark"] pre {
+  background-color: var(--nord1) !important;
+}
+
+/* Inline code */
+html[class~="dark"] .content code:not(.code-block code) {
+  background-color: var(--nord2);
+  color: var(--nord13);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Links */
+html[class~="dark"] a {
+  color: var(--nord8);
+}
+
+html[class~="dark"] a:hover {
+  color: var(--nord7);
+}
+
+/* Headers */
+html[class~="dark"] h1,
+html[class~="dark"] h2,
+html[class~="dark"] h3,
+html[class~="dark"] h4,
+html[class~="dark"] h5,
+html[class~="dark"] h6 {
+  color: var(--nord5);
+}
+
+/* Footer */
+html[class~="dark"] .hextra-footer {
+  background-color: var(--nord1);
+  border-top-color: var(--nord2);
+  color: var(--nord4);
+}
+
+/* Search */
+html[class~="dark"] .search-input {
+  background-color: var(--nord2);
+  border-color: var(--nord3);
+  color: var(--nord4);
+}
+
+html[class~="dark"] .search-results {
+  background-color: var(--nord1);
+  border-color: var(--nord2);
+}
+
+/* Table of Contents */
+html[class~="dark"] .hextra-toc {
+  background-color: var(--nord1);
+  border-color: var(--nord2);
+}
+
+/* Buttons */
+html[class~="dark"] button {
+  background-color: var(--nord2);
+  color: var(--nord4);
+  border-color: var(--nord3);
+}
+
+html[class~="dark"] button:hover {
+  background-color: var(--nord8);
+  color: var(--nord0);
+}
+
+/* Badges */
+html[class~="dark"] .hextra-badge {
+  background-color: var(--nord2);
+  color: var(--nord4);
+}
+
+/* Feature cards */
+html[class~="dark"] .hextra-feature-card {
+  background-color: var(--nord1);
+  border-color: var(--nord2);
+}
+
+html[class~="dark"] .hextra-feature-card:hover {
+  background-color: var(--nord2);
+  border-color: var(--nord8);
+}
+
+/* Scrollbar */
+html[class~="dark"] .hextra-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+html[class~="dark"] .hextra-scrollbar::-webkit-scrollbar-track {
+  background: var(--nord1);
+}
+
+html[class~="dark"] .hextra-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--nord3);
+  border-radius: 4px;
+}
+
+html[class~="dark"] .hextra-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--nord8);
+}
+
+/* Accent colors for various elements */
+html[class~="dark"] .text-primary {
+  color: var(--nord8);
+}
+
+html[class~="dark"] .text-success {
+  color: var(--nord14);
+}
+
+html[class~="dark"] .text-warning {
+  color: var(--nord13);
+}
+
+html[class~="dark"] .text-danger {
+  color: var(--nord11);
+}
+
+html[class~="dark"] .text-info {
+  color: var(--nord9);
+}

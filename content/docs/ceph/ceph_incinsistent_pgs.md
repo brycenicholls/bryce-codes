@@ -6,7 +6,7 @@ The below steps will help fix the error and identify the osd / disk that may be 
 
 Run a ceph status command to verify the error. Here you can see 1 pg is inconsistent.
 
-```bash
+```sh {filename="ceph status"}
 [root@ceph_monitor_1 ~]# ceph -s
     cluster 46268b52-5b0e-11e6-8fac-525400e2a6d8
      health HEALTH_ERR
@@ -26,7 +26,7 @@ Run a ceph status command to verify the error. Here you can see 1 pg is inconsis
 
 To identify which pg has the error run ‘ceph health detail’. In this case we can see that pg 5.291b is the pg that has the issue. We can also identify the OSDs that the pg is part of. [130,496,354]
 
-```bash
+```bash {filename="ceph health detail"}
 [root@ceph_monitor_1 ~]# ceph health detail
 HEALTH_ERR 1 pgs inconsistent; 1 scrub errors; pool metrics has many more objects per pg than average (too few pgs?)
 pg 5.291b is active+clean+inconsistent, acting [130,496,354]
@@ -36,14 +36,14 @@ pool metrics objects per pg (17848) is more than 13.2502 times cluster average (
 
 We issue the command to repair the pg ‘ ceph pg repair ‘ NOTE: The output will identify the affected OSD that is being repaired.
 
-```bash
+```bash {filename="ceph pg repair"}
 [root@ceph_monitor_1 ~]# ceph pg repair 5.291b
 instructing pg 5.291b on osd.130 to repair
 ```
 
 If you have a second session running on the ceph monitor, you can see the logs where the pg is being repaired. This is done by issuing the ‘ceph health’ or ‘ceph -h’ command as below.
 
-```bash
+```bash {filename="ceph -w"}
 [root@ceph_monitor_1 ~]# ceph -w
     cluster 46268b52-5b0e-11e6-8fac-525400e2a6d8
      health HEALTH_ERR
@@ -73,7 +73,7 @@ If you have a second session running on the ceph monitor, you can see the logs w
 
 To identify which storage node the affected OSD is part of run the `ceph osd find <OSD>` command. Here I have narrowed it down to just the host name.
 
-```bash
+```bash {filename="ceph osd find"}
 [root@ceph_monitor_1 ~]# ceph osd find 130 | grep host
         "host": "STOR00010",
 ```
